@@ -14,7 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const pathname = usePathname();
-
+ 
+  
   // Check if the current route is "Sign In"
   const isSignInPage = pathname === "/auth";
 
@@ -26,7 +27,7 @@ export default function RootLayout({
             {!isSignInPage && <NavBar />}
             <div className="main-content">{children}</div>
             {!isSignInPage && <Footer />}
-{/*             <BootstrapClient /> */}
+            {/* <BootstrapClient /> */}
           </Provider>
         </main>
       </body>

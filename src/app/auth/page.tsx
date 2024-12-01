@@ -127,7 +127,7 @@ export default function Home() {
       return;
     }
     try {
-      const response = await fetch("http://localhost:8000/api/v1/register", {
+      const response = await fetch("https://hint-server-prod.onrender.com/api/v1/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ emailId: email, password }),
@@ -149,7 +149,7 @@ export default function Home() {
   const handleVerifyOtp = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8000/api/v1/verifyOtp/${otp}`,
+        `https://hint-server-prod.onrender.com/api/v1/verifyOtp/${otp}`,
         {
           method: "POST",
           headers: {
@@ -179,7 +179,7 @@ export default function Home() {
 
     try {
     
-      const response = await fetch(`http://localhost:8000/api/v1/login`, {
+      const response = await fetch(`https://hint-server-prod.onrender.com/api/v1/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ emailId: email, password }),

@@ -26,7 +26,7 @@ export default function RootLayout({
             {!isSignInPage && <NavBar />}
             <div className="main-content">{children}</div>
             {!isSignInPage && <Footer />}
-            <BootstrapClient />
+{/*             <BootstrapClient /> */}
           </Provider>
         </main>
       </body>

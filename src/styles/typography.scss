@@ -1,0 +1,38 @@
+@import './variable.scss';
+
+@mixin typography-fl($ff, $fs, $fw, $cr){
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fw;
+    color: $cr;
+}
+a{
+    text-decoration: $none;
+    cursor: pointer;
+}
+
+//Common Mixins
+
+@mixin flex-style($flex, $align-items, $direction, $justify-content){
+    display: $flex;
+    align-items: $align-items;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+}
+
+@mixin width-height($width, $height){
+    width: $width;
+    height: $height;
+}
+.pad-80{
+    padding: 0 80px;
+}
+.pad-40{
+    padding: 0 40px;
+}
+.pad-0{
+    padding: 0;
+}
+.background-primary-col{
+    background: $text-hover;
+}

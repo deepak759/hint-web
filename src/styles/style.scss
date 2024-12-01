@@ -1,0 +1,620 @@
+@import './typography.scss';
+
+.main-nav-container{
+    height: 70px;
+    z-index: 1000;
+    width: $width-full;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1608);
+    .sub-container{
+        padding: 0 40px;
+        .navbar-brand{
+            img{
+                @include width-height(100px, 55px);
+            }
+        }
+        #navbarSupportedContent{
+            ul{
+                width: $width-full;
+                justify-content: flex-end;
+                .nav-item{
+                    padding: 0 18px;
+                    .nav-link{
+                        padding: 0;
+                        color: $text-primary;
+                        position: relative;
+                        &:hover,
+                        &.active{
+                            color: $text-hover;  
+                        }
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 4px;
+                            border-radius: 6px;
+                            background: transparent;
+                        }
+                        &:hover::after,
+                        &.active::after {
+                            background: $text-hover;
+                        }
+                        @include flex-style(flex, $center, row, $center);
+                        height: 70px;
+                    }
+                    &.log-in-container{
+                        padding: 0 0 0 30px;
+                        .nav-link{
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.main-container{
+    .doc-container{
+        @include flex-style(flex, $center, row,space-between);
+        padding: 30px 28px;
+        .main-heading{
+            @include typography-fl($primary-semi-bold, $text-40-size, $font-600, $text-hover);
+            width: 500px;
+        }
+        .btn{
+            @include width-height(170px, 40px);
+            border-radius: 20px;
+            background-color: $text-hover;
+            color: $background-primary;
+            padding: 0 18px;
+            @include flex-style(flex, $center, row,space-between);
+            img{
+                @include width-height(20px, 10px);
+            }
+        }
+        .doc-img{
+            @include width-height(auto, 600px);
+        }
+    }
+    .video-container{
+        background: $background-secondary;
+        text-align: $center;
+        .content{
+            @include typography-fl($primary-semi-bold, $text-20-size, $font-600, $text-secondary);
+        }
+    }
+    .service-main-section{
+        padding: 20px 68px;
+        .doc-home-section,
+        .medicine-section,
+        .pathology-section,
+        .nursing-section,
+        .physiotherapy-section{
+            @include flex-style(flex, $center, row, start);
+            border-radius: 24px 24px 0 0;
+            padding: 40px;
+            margin-bottom: 30px;
+            .doc-img-section{
+                img{
+                    @include width-height(300px, auto);
+                }
+            }
+            .text-content{
+                padding-left: 30px;
+                font-family: $primary-font;
+                color: $background-primary;
+                .content{
+                    @include typography-fl($primary-font, $text-18-size, $font-500, $background-primary);
+                    text-align: justify;
+                }
+            }
+        }
+        .doc-home-section{
+            background: $background-doc-home;
+        }
+        .medicine-section{
+            background: $background-medicine;
+        }
+        .pathology-section{
+            background: $background-pathology;
+        }
+        .nursing-section{
+            background: $background-nursing;
+        }
+        .physiotherapy-section{
+            background: $background-physio;
+        }
+    }
+    .sub-title{
+        @include typography-fl($primary-font, $text-30-size, $font-bold, $text-heading);
+        &#our-services{
+            scroll-margin-top: 90px;
+            width: 180px;
+            position: relative;
+            padding-bottom: 10px;
+            margin: 0 auto;
+            &::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 4px;
+                border-radius: 6px;
+                background: $text-hover;
+            }
+        }
+    }
+    #about-us{
+        scroll-margin-top: 90px;
+    }
+    .about-us{
+        @include typography-fl($primary-font, $text-24-size, $font-bold, $text-heading);
+        width: 106px;
+        position: relative;
+        padding-bottom: 10px;
+        margin: 0 auto;
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 4px;
+            border-radius: 6px;
+            background: $text-hover;
+        }
+    }
+    .testimonials-us{
+        @include typography-fl($primary-font, $text-24-size, $font-bold, $text-heading);
+        width: 140px;
+        position: relative;
+        padding-bottom: 10px;
+        margin: 0 auto;
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 4px;
+            border-radius: 6px;
+            background: $text-hover;
+        }
+    }
+    .about-us-section{
+        padding: 0 80px;
+        .content{
+            .text{
+                @include typography-fl($primary-semi-bold, $text-28-size, $font-bold, $text-subheading);
+            }
+            .info{
+                @include typography-fl($secondary-font, $text-18-size, $font-500, $text-heading);
+            }
+        }
+        .video-section{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+    .download-section{
+        @include flex-style(flex, $center, row, $center);
+        .app-img-section{
+            img{
+                width: 500px;
+            }
+        }
+        .text-section{
+            color: $background-primary;
+            .text{
+                @include typography-fl($primary-semi-bold, $text-28-size, $font-600, $background-primary);
+            }
+            .content{
+                max-width: 600px;
+                text-align: justify;
+                @include typography-fl($primary-font, $text-18-size, $font-500, $background-primary);
+            }
+            .logo-section{
+                @include flex-style(flex, $center, row, start);
+                gap: 15px;
+                img{
+                    @include width-height(150px, auto);
+                }
+            }
+        }
+    }
+    .background-carosouel{
+        background: rgb(248, 249, 250);
+        padding-bottom: 20px;
+    }
+    .custom-carosouel{
+        .mobile-device{
+            display: none;
+        }
+        @media only screen and (max-width: 768px) {
+            .mobile-device{
+                display: block;
+            }
+            .desktop-device{
+                display: none;
+            }
+        }
+        .carousel-item{
+            .wrapper-main{
+                @include flex-style(flex, normal, row, $center);   
+                gap: 20px;
+                .card-wrapper{
+                    @include width-height(300px, auto);
+                    margin-bottom: 40px;
+                    overflow: hidden;
+                    border-radius: 8px;
+                    position: relative;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    //border: 1px solid $text-footer;
+                    .img{
+                        margin-bottom: 20px;
+                        img{
+                            @include width-height(300px, 300px);
+                        }
+                    }
+                    .review{
+                        padding: 10px;
+                        text-align: justify;
+                        color: $background-primary;
+                        @include typography-fl($primary-font, $text-base-size, $font-500, $text-primary);
+                    }
+                    .name{
+                        @include typography-fl($primary-font, $text-20-size, $font-600, $text-primary);
+                        padding: 0 10px;
+                    }
+                }
+                
+            }
+        }
+        .carousel{
+            &.slide{
+                .carousel-indicators{
+                    margin-bottom: 0;
+                    button{
+                        background-color: $text-black;
+                    }
+                }
+            }
+        }
+        .carousel-control-prev,
+        .carousel-control-next{
+            opacity: 1;
+        }
+        .carousel-control-prev{
+            left: 12px;
+        }
+        .carousel-control-next{
+            right: 12px;
+        }
+    }
+}
+.footer-container{
+    .newsletter-section{
+        padding: 20px 65px 40px 65px;
+        border-bottom: 1px solid $input-border-color;
+        @include flex-style(flex, $center, row, space-between);
+        .text-section{
+            @include typography-fl($secondary-font, $text-18-size, $font-bold, $text-primary);
+        }
+        .content{
+            @include typography-fl($secondary-font, $text-base-size, $font-400, $text-subheading);
+        }
+        .newsletter-form{
+            @include flex-style(flex, $center, row, flex-end);
+            gap: 10px;
+            input{
+                height: 40px;
+            }
+            .email{
+                border: 1px solid $input-border-color;
+                border-radius: 6px;
+                padding-left: 10px;
+                width: 250px;
+            }
+        }
+    }
+    .footer-top{
+        padding: 40px 65px 20px 65px;
+        .footer-title{
+            h4{
+                @include typography-fl($secondary-font, $text-24-size, $font-600, $text-black);
+                margin-bottom: 14px;
+            }
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            li{
+                padding-bottom: 10px;
+                a{
+                    @include typography-fl($secondary-font, $text-base-size, $font-500, $text-footer);
+                    text-decoration: $none;
+                    &:hover{
+                        color: $text-hover;
+                    }
+                }
+            }
+            &.social-media-section{
+                @include flex-style(flex, $center, row, start);
+                li{
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        background: rgba(94, 165, 233, 0.2);
+        height: 60px;
+        padding: 0 68px;
+        .content{
+            height: 60px;
+            position: relative;
+            @include flex-style(flex, $center, row, $center);
+            img{
+                width: 80px;
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+}
+
+//Login Section
+.login-form-section{
+    background-image: url('./../assets/images/login-img.svg');
+    background-size: cover;
+    height: 100vh;
+    @include flex-style(flex,center,row,right);
+    padding-right: 60px;
+    .login-content{
+        padding: 30px 40px;
+        width: 420px;
+        background: $background-primary;
+        border-radius: 12px;
+        .header{
+            @include typography-fl($secondary-font,$text-24-size,$font-500,$text-hover);
+            margin-bottom: 20px;
+        }
+        .form-control{
+            @include width-height(100%, 48px);
+            box-shadow: $none;
+            border: 1px solid $border-color;
+            margin-bottom: 15px;
+            @include typography-fl($secondary-font,$text-14-size,$font-500,$text-black);
+            border-radius: 6px;
+            &:focus{
+                border-color: $text-hover;
+            }
+        }
+        .submit-btn{
+            @include width-height(100%, 48px);
+            border: $none;
+            border-radius: 6px;
+            background-color: $text-hover;
+            @include typography-fl($secondary-font,$text-20-size,$font-500,$background-primary);
+        }
+        .account-section,
+        .account-sections{
+            @include typography-fl($secondary-font,$text-14-size,$font-500,$text-black);
+            margin: 20px 0 30px;
+            .text{
+                @include typography-fl($secondary-font,$text-14-size,$font-500,$text-hover);
+                text-decoration: $none;
+            }
+        }
+        .continue-section{
+            @include typography-fl($secondary-font,$text-14-size,$font-500,$text-black);
+            @include flex-style(flex,center,row,center);
+            background: $border-color;
+            height: 1px;
+            position: relative;
+            span{
+                background-color: $background-primary;
+                padding: 0 10px;
+                position: absolute;
+            }
+        }
+        .social-section{
+            text-align: center;
+            .btn{
+                padding: 0;
+                margin: 0 20px;
+            }
+        }
+    }
+}
+
+//Mobile devices
+@media (max-width: 992px) { 
+    // Navbar header
+    .main-nav-container{
+        position: fixed;
+        top: 0;
+        .sub-container{
+            padding: 0;
+            .navbar-brand{
+                padding-left: 15px;
+                img{
+                    @include width-height(100px, auto);
+                }
+            }
+            .navbar-toggler{
+                border: $none;
+                &:focus{
+                    box-shadow: $none;
+                }
+            }
+            #navbarSupportedContent{
+                background: $background-primary;
+                position: absolute;
+                top: 68px;
+                width: $width-full;
+                box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1608);
+                ul{
+                    margin-bottom: 0!important;
+                    .nav-item{
+                        padding: 0;
+                        .nav-link{
+                            @include flex-style(flex, $center, row, start);
+                            height: auto;
+                            padding: 10px 15px;
+                            &:hover,
+                            &.active{
+                                &::after{
+                                    background: $none;
+                                }
+                            }
+                            &.active{
+                                background: $text-hover;
+                                color: $background-primary;
+                            }
+                        }
+                        &.log-in-container{
+                            padding: 0;
+                            .nav-link{
+                                padding: 10px 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Main Content
+    .main-container{
+        padding: 70px 15px 20px 15px;
+        .doc-container{
+            @include flex-style(flex, $center, column,start);
+            gap: 20px;
+            .main-heading{
+                width: auto;
+            }
+            .doc-img{
+                @include width-height(100%, auto);
+            }
+        }
+        .video-container{
+            img{
+                width: $width-full;
+            }
+        }
+        .service-main-section{
+            padding: 20px 3px;
+            .doc-home-section,
+            .medicine-section,
+            .pathology-section,
+            .nursing-section,
+            .physiotherapy-section{
+                @include flex-style(flex, $center, column, start);
+                padding: 20px 10px;
+                gap: 20px;
+                margin-bottom: 30px;
+                .doc-img-section{
+                    img{
+                        @include width-height(300px, auto);
+                    }
+                }
+                .text-content{
+                    padding-left: 0;
+                    .content{
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+        .sub-title{
+            @include typography-fl($primary-font, $text-30-size, $font-bold, $text-heading);
+            text-align: $center;
+            &#our-services{
+                scroll-margin-top: 90px;
+            }
+        }
+        .about-us{
+            @include typography-fl($primary-font, $text-24-size, $font-bold, $text-heading);
+            text-align: $center;
+        }
+        .about-us-section{
+            padding: 0 15px;
+            .content{
+                .text{
+                    text-align: center;
+                }
+                .info{
+                    @include typography-fl($secondary-font, $text-18-size, $font-500, $text-heading);
+                }
+            }
+        }
+        .card-section{
+            p{
+                @include typography-fl($secondary-font, $text-18-size, $font-500, $text-heading);
+                text-align: $center;
+                max-width: 526px;
+                margin: 0 auto;
+            }
+        }
+        .download-section{
+            @include flex-style(flex, $center, column, $center);
+            padding: 48px 15px;
+            .app-img-section{
+                img{
+                    width: 100%;
+                }
+            }
+            .text-section{
+                padding-left: 0!important;
+            }
+        }
+    }
+    .footer-container{
+        .newsletter-section{
+            padding: 20px 0 40px 0;
+            @include flex-style(flex, $center, column, start);
+            gap: 15px;
+            .text-section{
+                width: $width-full;
+            }
+        }
+        .footer-top{
+            padding: 40px 0 20px 0;
+            ul{
+                list-style: none;
+                padding: 0;
+                &.social-media-section{
+                    @include flex-style(flex, $center, row, start);
+                    li{
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+        .footer-bottom{
+            padding: 0 3px;
+            height: auto;
+            .content{
+                height: 60px;
+                position: relative;
+                gap: 10px;
+                img{
+                    width: 60px;
+                    position: relative;
+                }
+                .text{
+                    @include typography-fl($secondary-font, $text-12-size, $font-500, $text-heading);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .login-form-section{
+        @include flex-style(flex,center,row,center);
+        padding: 0 15px;
+    }
+}

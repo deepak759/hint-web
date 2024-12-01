@@ -1,0 +1,57 @@
+//Backgrounf Colors
+$background-primary : #FFFFFF; 
+$background-secondary : #EFEEEC;
+$background-footer: #5EA5E9;
+$background-doc-home: #CDD2E1;
+$background-medicine: #579C3E;
+$background-pathology: #BC9AFD;
+$background-nursing: #3EA4A4;
+$background-physio: #C69AEC;
+
+//Font Family
+$primary-font: RalewayRegular;
+$primary-semi-bold: RalewaySemiBold;
+$primary-bold: RalewayBold;
+$primary-extra-bold: RalewayExtraBold;
+$secondary-font: Roboto;
+
+//Text Colors
+$text-primary: #222222;
+$text-black: #000000;
+$text-secondary: #0E0D0D;
+$text-hover: #0372DD;
+$text-heading: #545457;
+$text-subheading: #525252;
+$text-content: #333333;
+$text-footer: #444648;
+$border-color: #707070;
+$input-border-color: #F3EDED;
+
+//Font Size & Weight
+$text-base-size: 16px;
+$text-15-size: $text-base-size - 1; //15px
+$text-14-size: $text-base-size - 2; //14px
+$text-12-size: $text-base-size - 4; //12px
+$text-18-size: $text-base-size + 2; //18px
+$text-20-size: $text-base-size + 4; //20px
+$text-24-size: $text-base-size + 8; //24px
+$text-28-size: $text-base-size * 2 - 4; //28px
+$text-30-size: $text-base-size * 2 - 2; //30px
+$text-32-size: $text-base-size * 2 + 2; //32px
+$text-40-size: $text-base-size * 2 + 8; //40px
+
+$font-bold: bold;
+$font-normal: normal;
+$font-italic: italic;
+$font-underline: underline;
+$font-capitalize: capitalize;
+$font-400: 400;
+$font-500: 500;
+$font-600: 600;
+
+// Width
+$width-full: 100%;
+
+// Custom classes
+$center: center;
+$none: none;

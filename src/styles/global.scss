@@ -1,0 +1,52 @@
+@import './typography.scss';
+@import './variable.scss';
+@import './style.scss';
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
+
+@font-face {
+    font-family: 'RalewayRegular';
+    src: url('../assets/fonts/Raleway-Regular.woff') format('woff'), url('../assets/fonts/Raleway-Regular.woff2') format('woff2');
+    font-weight: $font-normal;
+    font-style: $font-normal
+}
+@font-face {
+    font-family: 'RalewaySemiBold';
+    src: url('../assets/fonts/Raleway-SemiBold.woff') format('woff'), url('../assets/fonts/Raleway-SemiBold.woff2') format('woff2');
+    font-weight: $font-normal;
+    font-style: $font-normal
+}
+@font-face {
+    font-family: 'RalewayBold';
+    src: url('../assets/fonts/Raleway-Bold.woff') format('woff'), url('../assets/fonts/Raleway-Bold.woff2') format('woff2');
+    font-weight: $font-normal;
+    font-style: $font-normal
+}
+@font-face {
+    font-family: 'RalewayExtraBold';
+    src: url('../assets/fonts/Raleway-ExtraBold.woff') format('woff'), url('../assets/fonts/Raleway-ExtraBold.woff2') format('woff2');
+    font-weight: $font-normal;
+    font-style: $font-normal
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto.woff') format('woff'), url('../assets/fonts/Roboto.woff2') format('woff2');
+    font-weight: $font-normal;
+    font-style: $font-normal;
+}
+
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    background: $background-primary;
+    @include typography-fl($secondary-font, $text-base-size, $font-500, $text-primary);
+    font-style: $font-normal;
+}

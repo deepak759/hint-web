@@ -38,7 +38,7 @@ const Footer = () =>{
                             <ul>
                                 <li>
                                     <Link 
-                                        href="#"
+                                        href="/aboutus"
                                     >
                                         {GLOBAL_CONSTANTS.ABOUTUS_NAVLINKS}
                                     </Link>
@@ -95,28 +95,28 @@ const Footer = () =>{
                             <ul>
                                 <li>
                                     <Link 
-                                        href="#"
+                                        href="/aboutus"
                                     >
                                         {GLOBAL_CONSTANTS.WHYCHOOSE}
                                     </Link>
                                 </li>
                                 <li>
                                     <Link 
-                                        href="#"
+                                        href="/faq"
                                     >
                                         {GLOBAL_CONSTANTS.FAQ}
                                     </Link>
                                 </li>
                                 <li>
                                     <Link 
-                                        href="#"
+                                        href="/patientCare"
                                     >
                                         {GLOBAL_CONSTANTS.PATIENTCARE}
                                     </Link>
                                 </li>
                                 <li>
                                     <Link 
-                                        href="#"
+                                        href="/newsLetter"
                                     >
                                         {GLOBAL_CONSTANTS.NEWSLETTER}
                                     </Link>
@@ -144,28 +144,28 @@ const Footer = () =>{
                             <ul>
                                 <li>
                                     <Link 
-                                        href="#"
+                                        href="/terms"
                                     >
                                         {GLOBAL_CONSTANTS.TERMS}
                                     </Link>
                                 </li>
                                 <li>
                                     <Link 
-                                        href="#"
+                                        href="/privacy"
                                     >
                                         {GLOBAL_CONSTANTS.PRIVACY}
                                     </Link>
                                 </li>
                                 <li>
                                     <Link 
-                                        href="#"
+                                        href="/refund"
                                     >
                                         {GLOBAL_CONSTANTS.REFUND}
                                     </Link>
                                 </li>
                                 <li>
                                     <Link 
-                                        href="#"
+                                        href="/disclaimer"
                                     >
                                         {GLOBAL_CONSTANTS.DISCLAIMERTEXT}
                                     </Link>
@@ -181,7 +181,7 @@ const Footer = () =>{
                                 <li>{GLOBAL_CONSTANTS.EMAIL}</li>
                                 <li>
                                     <Link 
-                                        href="#"
+                                        href="/writeToUs"
                                     >
                                         {GLOBAL_CONSTANTS.WRTIETOUS}
                                     </Link>

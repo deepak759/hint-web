@@ -74,6 +74,7 @@ export default function Home() {
                 email: data.email,
                 name: data.name,
                 picture: data.picture,
+                accessToken:data.accessToken
               })
             );
             router.push("/");
@@ -104,6 +105,7 @@ export default function Home() {
                     email: data.email,
                     name: data.name,
                     picture: data.picture,
+                    accessToken:data.accessToken
                   })
                 );
                 router.push("/");
@@ -163,7 +165,7 @@ export default function Home() {
       if (response.ok) {
         alert("OTP verified successfully!");
         dispatch(setUserInfo({ email:email,name: "",
-          picture: "" }));
+          picture: "",accessToken:accessToken }));
         router.push("/");
       } else {
         alert(res.message);
@@ -194,16 +196,12 @@ export default function Home() {
               email: res.data.user.emailId,
               name: res.data.user.name,
               picture: res.data.user.picture,
+              accessToken: res.data.accessToken
             })
           );
+          router.push("/");
         } else {
-          dispatch(
-            setUserInfo({
-              email: res.data.emailId,
-              name: res.data.name,
-              picture: res.data.picture,
-            })
-          );
+         console.log()
         }
         router.push("/");
       } else {

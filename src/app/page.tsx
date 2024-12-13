@@ -35,23 +35,83 @@ import hintVideo from "../assets/video/hint-video.mp4";
 
 export default function Home() {
   const reviewData = [
-    { img: Image1, name: GLOBAL_CONSTANTS.NAME1, review: GLOBAL_CONSTANTS.REVIEW1 },
-    { img: Image2, name: GLOBAL_CONSTANTS.NAME2, review: GLOBAL_CONSTANTS.REVIEW2 },
-    { img: Image3, name: GLOBAL_CONSTANTS.NAME3, review: GLOBAL_CONSTANTS.REVIEW3 },
-    { img: Image4, name: GLOBAL_CONSTANTS.NAME4, review: GLOBAL_CONSTANTS.REVIEW4 },
-    { img: Image5, name: GLOBAL_CONSTANTS.NAME5, review: GLOBAL_CONSTANTS.REVIEW5 },
-    { img: Image6, name: GLOBAL_CONSTANTS.NAME6, review: GLOBAL_CONSTANTS.REVIEW6 },
-    { img: Image7, name: GLOBAL_CONSTANTS.NAME7, review: GLOBAL_CONSTANTS.REVIEW7 },
-    { img: Image8, name: GLOBAL_CONSTANTS.NAME8, review: GLOBAL_CONSTANTS.REVIEW8 },
-    { img: Image9, name: GLOBAL_CONSTANTS.NAME9, review: GLOBAL_CONSTANTS.REVIEW9 },
-    { img: Image10, name: GLOBAL_CONSTANTS.NAME10, review: GLOBAL_CONSTANTS.REVIEW10 },
-    { img: Image11, name: GLOBAL_CONSTANTS.NAME11, review: GLOBAL_CONSTANTS.REVIEW11 },
-    { img: Image12, name: GLOBAL_CONSTANTS.NAME12, review: GLOBAL_CONSTANTS.REVIEW12 },
-    { img: Image13, name: GLOBAL_CONSTANTS.NAME13, review: GLOBAL_CONSTANTS.REVIEW13 },
-    { img: Image14, name: GLOBAL_CONSTANTS.NAME14, review: GLOBAL_CONSTANTS.REVIEW14 },
-    { img: Image15, name: GLOBAL_CONSTANTS.NAME15, review: GLOBAL_CONSTANTS.REVIEW15 },
+    {
+      img: Image1,
+      name: GLOBAL_CONSTANTS.NAME1,
+      review: GLOBAL_CONSTANTS.REVIEW1,
+    },
+    {
+      img: Image2,
+      name: GLOBAL_CONSTANTS.NAME2,
+      review: GLOBAL_CONSTANTS.REVIEW2,
+    },
+    {
+      img: Image3,
+      name: GLOBAL_CONSTANTS.NAME3,
+      review: GLOBAL_CONSTANTS.REVIEW3,
+    },
+    {
+      img: Image4,
+      name: GLOBAL_CONSTANTS.NAME4,
+      review: GLOBAL_CONSTANTS.REVIEW4,
+    },
+    {
+      img: Image5,
+      name: GLOBAL_CONSTANTS.NAME5,
+      review: GLOBAL_CONSTANTS.REVIEW5,
+    },
+    {
+      img: Image6,
+      name: GLOBAL_CONSTANTS.NAME6,
+      review: GLOBAL_CONSTANTS.REVIEW6,
+    },
+    {
+      img: Image7,
+      name: GLOBAL_CONSTANTS.NAME7,
+      review: GLOBAL_CONSTANTS.REVIEW7,
+    },
+    {
+      img: Image8,
+      name: GLOBAL_CONSTANTS.NAME8,
+      review: GLOBAL_CONSTANTS.REVIEW8,
+    },
+    {
+      img: Image9,
+      name: GLOBAL_CONSTANTS.NAME9,
+      review: GLOBAL_CONSTANTS.REVIEW9,
+    },
+    {
+      img: Image10,
+      name: GLOBAL_CONSTANTS.NAME10,
+      review: GLOBAL_CONSTANTS.REVIEW10,
+    },
+    {
+      img: Image11,
+      name: GLOBAL_CONSTANTS.NAME11,
+      review: GLOBAL_CONSTANTS.REVIEW11,
+    },
+    {
+      img: Image12,
+      name: GLOBAL_CONSTANTS.NAME12,
+      review: GLOBAL_CONSTANTS.REVIEW12,
+    },
+    {
+      img: Image13,
+      name: GLOBAL_CONSTANTS.NAME13,
+      review: GLOBAL_CONSTANTS.REVIEW13,
+    },
+    {
+      img: Image14,
+      name: GLOBAL_CONSTANTS.NAME14,
+      review: GLOBAL_CONSTANTS.REVIEW14,
+    },
+    {
+      img: Image15,
+      name: GLOBAL_CONSTANTS.NAME15,
+      review: GLOBAL_CONSTANTS.REVIEW15,
+    },
   ];
- 
+
   return (
     <div className="container-fluid main-container">
       <div className="row doc-container">
@@ -151,10 +211,12 @@ export default function Home() {
       <div className="row">
         <div className="col about-us-section">
           <div className="content">
-            <p className="info">{GLOBAL_CONSTANTS.ABOUTUSCONTENT}</p>
+            <p className="info">
+              {GLOBAL_CONSTANTS.ABOUTUSCONTENT} <a href="/aboutus">Read More</a>{" "}
+            </p>
           </div>
           <div className="video-section">
-            <video width="100%" controls>
+            <video width="100%" controls autoPlay muted loop>
               <source src={hintVideo} type="video/mp4" />
             </video>
           </div>
@@ -162,7 +224,9 @@ export default function Home() {
       </div>
       <div className="row">
         <div className="col">
-          <h4 className="testimonials-us mb-4 mt-5">{GLOBAL_CONSTANTS.TESTIMONIALS}</h4>
+          <h4 className="testimonials-us mb-4 mt-5">
+            {GLOBAL_CONSTANTS.TESTIMONIALS}
+          </h4>
         </div>
       </div>
       <div className="row background-carosouel pt-5">

@@ -14,6 +14,7 @@ const BootstrapClient = () => {
         });
 
     }, []);
+    return null;
 
 };
 

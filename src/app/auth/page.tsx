@@ -12,7 +12,7 @@ import Link from "next/link";
 import Back from "@/assets/images/back-Arrow.svg"
 const GOOGLE_CLIENT_ID =
   "122449642269-lokroftv46bufp3ib92baaqpf7gp8ljf.apps.googleusercontent.com";
-const GOOGLE_REDIRECT_URI = "http://localhost:3000/auth";
+const GOOGLE_REDIRECT_URI = "https://hint-web.vercel.app/auth";
 const FACEBOOK_APP_ID = "1984491305402668"; // Replace with your Facebook App ID
 
 
